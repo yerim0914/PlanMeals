@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, List } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 import './Ingredient.css';
@@ -19,6 +19,9 @@ const IngredientList: React.FC<Props> = (prop) => {
     setDes(ingredientList[idx]);
   }
   
+  useEffect(() => {
+    setIngredientList(prop.list);
+  }, [prop.list]);
 
   return (
   <div className='ingredient-page-wrapper'>

@@ -62,7 +62,7 @@ const IngredientPage: React.FC = () => {
       <Divider orientationMargin={100}/>
       <AutoComplete
         popupMatchSelectWidth={252}
-        style={{ width: 300 }}
+        style={{ width: 300, marginBottom:"30px", marginLeft:"30px", alignSelf:"center"}}
         options={options}
         onSelect={onSelect}
         onSearch={handleSearch}

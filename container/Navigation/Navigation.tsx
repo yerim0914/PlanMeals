@@ -33,7 +33,7 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
 
   return (
       <Layout rootClassName="NavigationWrapper">
-      <Sider trigger={null} collapsible collapsed={collapsed} theme={'light'}>
+      <Sider trigger={null} collapsible collapsed={collapsed} theme={'light'} style={{width: '30%'}}>
         <div className="demo-logo-vertical"/>
         <div className="nav-menu">
           <Button type="text" style={{margin: '20px 0', width: '100%', height: '100px', fontSize: 'xx-large', fontWeight: '800', color: 'rgb(13, 13, 43)'}}
