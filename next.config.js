@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/{MyRefrigerator}",
+    basePath: "/{PlanMeals}",
   };
 module.exports = nextConfig
