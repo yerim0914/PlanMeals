@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: "/{PlanMeals}",
-  };
+const nextConfig = {}
+
 module.exports = nextConfig
