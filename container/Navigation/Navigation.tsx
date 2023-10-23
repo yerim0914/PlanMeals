@@ -33,8 +33,8 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
 
   return (
       <Layout rootClassName="NavigationWrapper">
-      <Sider trigger={null} collapsible collapsed={collapsed} theme={'light'} style={{width: '30%'}}>
-        <div className="demo-logo-vertical"/>
+      <div className="navigation-sider">
+      <Sider trigger={null} collapsible collapsed={collapsed} theme={'light'} style={{minWidth:"100%"}}>
         <div className="nav-menu">
           <Button type="text" style={{margin: '20px 0', width: '100%', height: '100px', fontSize: 'xx-large', fontWeight: '800', color: 'rgb(13, 13, 43)'}}
             onClick={() => {router.push('./')}}
@@ -58,8 +58,8 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
             className="navbtn mypage-btn"
           />
         </div>
-
       </Sider> 
+      </div>
       <Layout>
         <Content
           className='content-wrapper'
