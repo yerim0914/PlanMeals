@@ -1,0 +1,34 @@
+.ingredient-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.ingredient-page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ingredient-list-wrapper {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 3;
+}
+
+.ingredient-item {
+    display: flex;
+    flex-direction: row;
+    place-items: flex-end;
+    justify-content: space-between;
+}
+
+.ingredient-description {
+    width: 30%;
+    height: 60%;
+    border: 1px solid;
+}
