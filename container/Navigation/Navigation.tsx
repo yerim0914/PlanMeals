@@ -23,7 +23,7 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
   const setCollapsedHandler = () => {
     return collapsed === true ? setCollapsed(false): setCollapsed(true);
   }
-
+  
   return (
       <Layout rootClassName="NavigationWrapper">
       <Sider trigger={null} 
@@ -31,7 +31,7 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
         collapsed={collapsed}
         theme={'light'}
         style={{minWidth:"100%", height:"100%"}}
-        collapsedWidth={"2.5%"}
+        collapsedWidth={"50px"}
         >
         <div className="nav-menu">
         <Button

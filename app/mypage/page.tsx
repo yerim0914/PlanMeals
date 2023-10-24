@@ -10,17 +10,20 @@ const MyPage: React.FC = () => {
  
   return (
     <Layout className='mypage-wrapper'>
-      <Title className='mypage-header'>
+      <Text className='mypage-header'>
       건강한 집밥을 위한 냉장고 관리
-      </Title>
+      </Text>
       <Layout className='mypage-login-wrapper'>
       <Text
-        style={{fontSize:"30px"}}
-      >로그인 하시면 많은 혜택을 받으실 수 있습니다.</Text>
+        className='login-text'
+        style={{
+          textSizeAdjust: "auto",
+          fontFamily: "sans-serif"
+      }}>로그인하시면 많은 혜택을 받으실 수 있습니다.
+      </Text>
       <Image
+        className='happylogin-image'
         alt='이미지'
-        width={400}
-        height={350}
         src="./happylogin.jpg"
       />
       <KakaoLoginButton />

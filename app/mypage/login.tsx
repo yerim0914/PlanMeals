@@ -1,5 +1,7 @@
 import React from 'react';
 import KakaoLogin from 'react-kakao-login';
+import './mypage.css';
+import { Image } from 'antd';
 
 const KakaoLoginButton: React.FC = () => {
   const responseKaKao = (res: any) => {
@@ -13,8 +15,11 @@ const KakaoLoginButton: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='kakaologin-button'>
       <KakaoLogin
+        // className='kakaologin-button'
+        // style={{width:"100%"}}
+        useLoginForm={true}
         token='key'
         // jsKey="YOUR_KAKAO_JAVASCRIPT_KEY"
         onSuccess={responseKaKao}
