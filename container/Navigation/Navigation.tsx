@@ -26,7 +26,13 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
 
   return (
       <Layout rootClassName="NavigationWrapper">
-      <Sider trigger={null} collapsible collapsed={collapsed} theme={'light'} style={{minWidth:"100%", height:"100%"}}>
+      <Sider trigger={null} 
+        collapsible
+        collapsed={collapsed}
+        theme={'light'}
+        style={{minWidth:"100%", height:"100%"}}
+        collapsedWidth={"2.5%"}
+        >
         <div className="nav-menu">
         <Button
             className='nav-fold-button'
@@ -37,7 +43,7 @@ const Navigation: React.FunctionComponent<NavigationProps> = (props) => {
           <Button type="text" style={{margin: '20px 0', width: '100%', height: '100px', fontSize: 'xx-large', fontWeight: '800', color: 'rgb(13, 13, 43)', display: "inline"}}
             onClick={() => {router.push('./')}}
           >
-            {collapsed ? "냉부" : <span className="multi-line-text">냉장고를 부탁해</span>}
+            {collapsed ? "" : <span className="multi-line-text">냉장고를 부탁해</span>}
           </Button>
           <Button
             type="text"

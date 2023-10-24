@@ -23,6 +23,7 @@ const IngredientPage: React.FC = () => {
     const updatedList = [...listData, value];
     SetListData(updatedList);
   }
+  const today = new Date();
 
   const searchResult = (value: string) => {
     const filteredResult = listData.filter(val => val.includes(value));
@@ -56,10 +57,10 @@ const IngredientPage: React.FC = () => {
 
   return (
     <div className='ingredient-wrapper'>
-      <Title level={2}>
+      <Title level={3} style={{alignItems:"center", display:"flex", height:"9%"}}>
         냉장고 현황
       </Title>
-      <Divider orientationMargin={100}/>
+      {/* <Divider orientationMargin={50}/> */}
       <AutoComplete
         popupMatchSelectWidth={252}
         style={{ width: "30%", minWidth: "150px", marginBottom:"30px", marginLeft:"30px", alignSelf:"center"}}
